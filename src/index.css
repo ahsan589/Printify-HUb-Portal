@@ -1,3 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px; /* Reduced from default 16px (87.5%) for better 100% zoom scaling */
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +18,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  min-height: 100vh;
 }
+
+/* High DPI display support */
+@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    font-size: 15px;
+  }
+}
+
