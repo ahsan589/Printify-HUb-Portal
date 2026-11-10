@@ -13,7 +13,7 @@ import {
   FiThumbsUp,
 } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
-import { collection, query, orderBy, limit, getDocs } from 'firebase/firestore';
+import { collection, query, orderBy, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import useStoreData from '../hooks/useStoreData';
 import { formatCurrency, formatPriceDisplay, isBundleProduct } from '../utils/productHelpers';

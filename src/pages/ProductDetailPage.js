@@ -47,8 +47,8 @@ export default function ProductDetailPage({ products }) {
   const { id } = useParams();
   const [selectedImage, setSelectedImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
-  const [customizationDetails, setCustomizationDetails] = useState('');
-  const [selectedCustomizationFile, setSelectedCustomizationFile] = useState('');
+  const [customizationDetails] = useState('');
+  const [selectedCustomizationFile] = useState('');
   const [selectedCustomizationOptions, setSelectedCustomizationOptions] = useState({});
   const [imageOffset, setImageOffset] = useState({ x: 50, y: 50 });
   const [imageHovered, setImageHovered] = useState(false);
